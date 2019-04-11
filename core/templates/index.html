@@ -1,6 +1,29 @@
 {% extends 'base.html' %}
+{% load static %}
 
-{% block content %}
-<p> test </p>
+{%block content%}
+
+
+<header>
+        <img src="{% static 'images/me.jpg' %}" alt="Juan Polanco" class="profile-image">
+        <h1 class="tag name">Hello, I’m Juan </h1>
+        <div class="tag-location"> 
+        <p> <i> Student at Momentum</i></p>
+        <p >  Raleigh, NC </p>
+        </div>  
+    </header>
+    <section class="container">
+        <div class="box1">
+            <h2 class="summary"> About Me </h2>
+            <p> Hard-working, outgoing, Ambitious, dedicated individual who possesses strong interpersonal skills.
+                Looking to apply my education and experience in the software field to create remarkable software to
+                make an impact within our community!</p>
+
+            <p> <i>Sucess is not final, failure is not fatal: it is the courage to continue that counts. <br> -
+                    Winston Churchill </i> </p>
+
+        </div>
+
+
 
 {% endblock %}

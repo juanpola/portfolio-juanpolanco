@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{%block content%}
+{% for project in projects.all %} 
+
+<h1> {{project.title}}</h1>
+<h4> {{project.description}} </h4>
+<div class="project-image">{{project.image}} </div>
+<div class="project-url"> {{project.url}} </div>
+
+{% endfor %}
+
+{% endblock %}

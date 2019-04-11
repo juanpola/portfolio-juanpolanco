@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{%block content%}
+
+{% for skill in skills.all %}
+<div class="resumebody">
+        <div class="contactinfo">
+                {% for contact in contact.all%}
+                <div class="phone-number"> 📲 <a href="tel:336-202-6501"> {{contact.phone}} </a> </div>
+                <div> 📧 <a href="mailto:juanpolanco5008@gmail.com?Subject= 👋🏻 Juan, Lets Get ☕️  Sometime!"
+                                target="_top"> {{contact.email}} </a> </div>
+                {% endfor %}
+
+                               <u>  <h1 class="skilltag"> Skills </h1> </u>
+        </div>
+        <div class="skill-wrapper">
+                <div class="skillbox1">
+                        <ul style="list-style:none">
+                                <li> <u> {{skill.skillone}} </u></li>
+                                <li> -{{skill.skilltwo}} </li>
+                                <li> -{{skill.skillthree}}</li>
+                                <li> -{{skill.skillfour}}</li>
+                                <li> -{{skill.skillfive}}</li>
+                                <li> -{{skill.skillsix}}</li>
+                                <li> -{{skill.skillseven}}</li>
+                        </ul>
+                </div>
+                <div class="skillbox2">
+                        <ul style="list-style:none">
+                                <li> <u>{{skill.skilleight}} </u></li>
+                                <li> -{{skill.skillnine}}</li>
+                                <li> -{{skill.skillten}}</li>
+                                <li> -{{skill.skilleleven}}</li>
+                                <li> -{{skill.skilltwelve}}</li>
+                        </ul>
+                </div>
+        </div>
+        {% endfor %}
+
+        {% for education in education.all%}
+        <div class="educationbox">
+               <u> <h1> Education</h1>  </u> 
+                <ul style="list-style:none" >
+                        <li> {{education.one}}</li>
+
+                        <li> {{education.two}} </li>
+                </ul>
+
+                {% endfor %}
+        </div>
+
+        <u> <h1 class="experiencetag"> Experience </h1> </u> 
+
+        {% for job in jobs.all %}
+        <div class="jobbox">
+                <h2 class="jobtag"> {{job.title}} </h2>
+                <h3 class="company"> {{job.company}}</h3>
+                <h4 class="location"> {{job.location}} </h4>
+                <h5 class="date"> {{job.start_date}} </h5>
+        </div>
+        <div class="jobdescription">
+                <ul style="list-style:none">
+                        <li>
+                                {{job.description}}
+                        </li>
+                        <li>
+                                {{job.destwo}}
+                        </li>
+                        <li>
+                                {{job.desthree}}
+                        </li>
+                        <li>
+                                {{job.desfour}}
+                        </li>
+                        <li>
+                                {{job.desfive}}
+                        </li>
+                        <li>
+                                {{job.dessix}}
+                        </li>
+                        <li>
+                                {{job.desseven}}
+                        </li>
+                        <li>
+                                {{job.deseight}}
+                        </li>
+                        <li>
+                                {{job.desnine}}
+                        </li>
+                        <li>
+                                {{job.desten}}
+                        </li>
+
+                </ul>
+        </div>
+
+        {% endfor %}
+</div>
+{% endblock %}
