@@ -30,11 +30,12 @@ a:active {
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 0%;
     text-align: center;
     font-family: monospace;
     color: #222;
     background: rgb(220, 237, 253);
+    /* font-size: 10rem; */
 }
 
 .Résumé-title {
@@ -153,7 +154,7 @@ header .profile-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 3px dashed white;
+    border: 3px solid white;
 }
 
 .profile-image {
@@ -306,10 +307,11 @@ h2:hover {
 
 .skill-wrapper {
     display: grid;
-    grid-template-columns: 30% 30%;
-    display: flex;
-    justify-content: space-evenly;
-    /* border: 5px dashed white; */
+    grid-template-columns: 50% 50%;
+    /* display: flex;
+    justify-content: space-evenly; */
+    /* justify-content: center; */
+    border: 5px dashed white;
     padding-left: 5%;
 }
 
@@ -441,20 +443,34 @@ h2:hover {
 
 .resumebody{
     background-color: white;
-    padding: 10%  10%  15%  5% ;
+    padding: 10%  10%  15% 10% ;
 }
 
 
 .educationbox{
     padding: 5%;
     display: flex;
-    justify-content: center;
+    justify-content: left;
 }
 .contactinfo{
     text-align: right;
 }
 .skilltag{
     text-align: center;
+    color: #ff8080;
+}
+.container-1{
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.box2{
+    align-self: flex-start;
+}   
+
+.greeting{
+    font-family: sans-serif;
+    color: #f05656;
 
 
 }

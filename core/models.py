@@ -27,8 +27,8 @@ class Job(models.Model):
 class Project(models.Model):
     title = models.CharField(max_length=500, blank=True)
     description = models.CharField(max_length=1000, blank=True)
-    image = models.ImageField(height_field=300, blank=True)
-    url = models.URLField(max_length=50, blank=True,)
+    image = models.ImageField(blank=True)
+    url = models.URLField(max_length=300, blank=True,)
 
 
     def __str__(self):
@@ -60,4 +60,4 @@ class Education(models.Model):
 class Contact(models.Model):
     phone = models.CharField(max_length=50 )
     email = models.EmailField(max_length=50)
-
+    address = models.CharField(max_length=100, default='address')

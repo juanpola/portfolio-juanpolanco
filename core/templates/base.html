@@ -8,21 +8,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
     <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+</div>
 </head>
 <title> Juan's Portfolio </title>
 
 <body>
     <div class="main-nav">
         <div class="nav">
-            <a class="f6 link dim br3 ba ph3 pv2 mb2 dib hot-pink" href="#0"> Home</a>
-            <a class="f6 link dim br3 ba ph3 pv2 mb2 dib hot-pink" href="#0">Resume </a>
-            <a class="f6 link dim br3 ba ph3 pv2 mb2 dib hot-pink" href="#0">Projects</a>
+            <a href="{% url 'home' %}" class="f6 link dim br3 ba ph3 pv2 mb2 dib hot-pink" href="#0"> Home</a>
+            <a href="{% url 'resume' %}" class="f6 link dim br3 ba ph3 pv2 mb2 dib hot-pink" href="#0">Resume </a>
+            <a href="{% url 'projects' %}"class="f6 link dim br3 ba ph3 pv2 mb2 dib hot-pink" href="#0">Projects</a>
            <a  class="f6 link dim br3 ba ph3 pv2 mb2 dib hot-pink" href="mailto:juanpolanco5008@gmail.com?Subject= 👋🏻 Juan, Lets Get ☕️  Sometime!"
                         target="_top">Contact</a>
     
             </ul>
+            <div class="greeting">
+            <script src="static/script.js"> document.write();
+            </script>
+            </div>
+ 
         </div>
-        
             {% block content %}
 
             {% endblock %}

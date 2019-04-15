@@ -4,13 +4,17 @@
 {% for skill in skills.all %}
 <div class="resumebody">
         <div class="contactinfo">
+                
                 {% for contact in contact.all%}
+                <div style="color:#ff8080;"> <u> Contact: </u> </div>
+
                 <div class="phone-number"> 📲 <a href="tel:336-202-6501"> {{contact.phone}} </a> </div>
                 <div> 📧 <a href="mailto:juanpolanco5008@gmail.com?Subject= 👋🏻 Juan, Lets Get ☕️  Sometime!"
                                 target="_top"> {{contact.email}} </a> </div>
+                                <div style="color:#ff8080;"> {{contact.address}} </div>
                 {% endfor %}
 
-                               <u>  <h1 class="skilltag"> Skills </h1> </u>
+                                <h1 class="skilltag"> Skills </h1>
         </div>
         <div class="skill-wrapper">
                 <div class="skillbox1">
@@ -36,19 +40,8 @@
         </div>
         {% endfor %}
 
-        {% for education in education.all%}
-        <div class="educationbox">
-               <u> <h1> Education</h1>  </u> 
-                <ul style="list-style:none" >
-                        <li> {{education.one}}</li>
-
-                        <li> {{education.two}} </li>
-                </ul>
-
-                {% endfor %}
-        </div>
-
-        <u> <h1 class="experiencetag"> Experience </h1> </u> 
+        <h1 style="color: #ff8080;
+        " class="experiencetag"> Experience </h1>
 
         {% for job in jobs.all %}
         <div class="jobbox">
@@ -94,5 +87,18 @@
         </div>
 
         {% endfor %}
+        {% for education in education.all%}
+        <div class="educationbox">
+                <h1 style="color: #ff8080;
+                "> Education</h1>  
+                <ul style="list-style:none" >
+                        <li> {{education.one}}</li>
+
+                        <li> {{education.two}} </li>
+                </ul>
+
+                {% endfor %}
+        </div>
 </div>
+
 {% endblock %}
