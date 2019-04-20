@@ -1,0 +1,476 @@
+footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    opacity: .8;
+    background: url("images/tumblr_mwlus5Uezf1sarp9to7_500.a58e9e00018f.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    /* background-color: rgb(164, 219, 245); */
+    text-align: center;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #ff8080;
+    text-decoration: none;
+}
+
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0%;
+    text-align: center;
+    font-family: monospace;
+    color: #222;
+    background: rgb(220, 237, 253);
+    /* font-size: 10rem; */
+}
+
+.Résumé-title {
+    margin: 3%;
+    padding: 3%;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background: #f7f5f0;
+}
+
+.experience {
+    margin: 7%;
+    /* padding: 2%; */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    /* background-color: grey */
+}
+
+.job-history {
+    margin: 5%;
+    /* padding: 2%; */
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background: #f7f5f0;
+}
+
+.Contact-info {
+    text-align: right;
+    font-family: Roboto, sans-serif;
+    color: rgb(34, 34, 34);
+    /* margin: 3%;
+    padding: 3%; */
+    background: rgb(247, 245, 240);
+    height: 40px;
+}
+
+
+header {
+    text-align: center;
+    background: url("images/acg-raleigh-durham-2880x1200.df4fb584be38.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-top: 15%;
+    color: white;
+    /* color: rgb(232, 166, 240) */
+}
+
+a {
+    text-decoration: none;
+    color: #0499ff;
+}
+
+a:hover {
+    color: #6633ff;
+}
+
+}
+
+.main-nav {
+    width: 100%;
+    min-height: 30px;
+    padding: 10px;
+    position: fixed;
+    text-align: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 1%; 
+    /* padding-left: 5%;
+    padding-right: 5%;  */
+    background: url("images/tumblr_mwlus5Uezf1sarp9to7_500.a58e9e00018f.jpg") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+   
+}
+
+ul {
+    transition: all .5s
+}
+
+ul:hover {
+    color: blue;
+}
+
+.nav .name {
+    display: none;
+}
+
+.nav li {
+    padding: 5px 10px 10px 10px;
+}
+
+.name {
+    transition: all .5s;
+}
+
+.nav a {
+    transition: all .5s;
+}
+
+.nav a:hover {
+    color: white;
+}
+
+header .profile-image {
+    margin-top: 50px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.profile-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 50px; */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+    
+}
+
+header .profile-image:hover {
+    transform: scale(1.3);
+}
+
+.profile-image:hover {
+    transform: scale(1.3);
+}
+
+.skills-box {
+    line-height: 20px;
+    margin: 5%;
+    /* padding: 2%;  */
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    background: #f7f5f0;
+
+}
+
+.programming-skills {
+    text-align: center;
+    margin: 7%;
+    line-height: 1%;
+    color: #0499ff;
+
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 3%; */
+    /* padding: 3%; */
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.box1 {
+    /* margin: 30px; */
+    padding:   40px;
+    max-width: 500px;
+    text-align: center;
+    background: white;
+    border-radius: 6px;
+    /* border: dashed rgb(232, 166, 240); */
+
+}
+
+p {
+    line-height: 30px;
+    /* within paragraph */
+    margin-bottom: 50px;
+    /* between paragraphs */
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2:hover {
+    transform: scale(1.1);
+}
+
+.Education {
+    /* display: flex; */
+    text-align: left;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    padding: 3%;
+    margin: 3%;
+    line-height: 3;
+}
+
+.edu-tag {
+    text-align: center;
+    color: #0499ff;
+
+}
+
+.edu-tag:hover {
+    transform: scale(1.1);
+}
+
+.Employment-history {
+    color: #0499ff;
+
+}
+
+.project-showcase {
+    margin: 3%;
+    padding: 1%;
+    align-content: center;
+    text-align: left;
+    line-height: 12px;
+    margin-bottom: 12px;
+}
+
+.project {
+    text-align: center;
+    margin: 3%;
+    padding: 6%;
+    padding-bottom: 1%;
+}
+
+.project-one {
+    border: 2px dotted black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jobbox {
+    /* border: 5px solid black; */
+    text-align: left;
+    padding-left: 3%;
+
+}
+
+.jobdescription {
+    text-align: left;
+    padding-bottom: 5%;
+
+}
+
+.skillbox1 {
+    padding-left: 3%;
+    text-align: left;
+
+}
+
+.skillbox2 {
+    text-align: left;
+    padding-right: 3%;
+}
+
+.skill-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* display: flex;
+    justify-content: space-evenly; */
+    /* justify-content: center; */
+    border: 5px dashed white;
+    padding-left: 5%;
+}
+
+.f6 {
+    font-size: .875rem;
+}
+.cover {
+    background-size: cover !important;
+}
+
+.bg-center {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.br2 {
+    border-radius: .25rem;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.h2 {
+    height: 2rem;
+}
+
+.link {
+    text-decoration: none;
+    transition: color .15s ease-in;
+}
+
+.link:link, .link:visited {
+    transition: color .15s ease-in;
+}
+
+.link:hover {
+    transition: color .15s ease-in;
+}
+
+.link:active {
+    transition: color .15s ease-in;
+}
+
+.link:focus {
+    transition: color .15s ease-in;
+    outline: 1px dotted currentColor;
+}
+
+.w2 {
+    width: 2rem;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.white-60 {
+    color: rgba(255, 255, 255, .6);
+}
+
+.bg-black-80 {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.hover-white:hover {
+    color: #fff;
+}
+
+.hover-white:focus {
+    color: #fff;
+}
+
+.pa2 {
+    padding: .5rem;
+}
+
+.pr2 {
+    padding-right: .5rem;
+}
+
+.pv5 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.ph3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.ma2 {
+    margin: .5rem;
+}
+
+.ml3 {
+    margin-left: 1rem;
+}
+
+.tc {
+    text-align: center;
+}
+
+.f6 {
+    font-size: .875rem;
+}
+
+@media screen and (min-width: 60em) {
+    .tc-l {
+        text-align: center;
+    }
+}
+
+.resumebody{
+    background-color: white;
+    padding: 10%  10%  15% 10% ;
+}
+
+
+.educationbox{
+    padding: 5%;
+    display: flex;
+    justify-content: left;
+}
+.contactinfo{
+    text-align: right;
+}
+.skilltag{
+    text-align: center;
+    color: #ff8080;
+}
+.container-1{
+    /* border: 3px solid black; */
+    display: flex;
+    flex-direction: column;
+}
+.box2{
+    align-self: flex-start;
+}   
+
+.greeting{
+    font-family: sans-serif;
+    color: #f05656;
+
+
+}
