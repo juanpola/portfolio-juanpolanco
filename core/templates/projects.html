@@ -9,7 +9,7 @@
         <h1> {{project.title}}</h1>
         <h4> {{project.description}} </h4>
         {% if project.image %}
-        <div> <img src="{{ project.image.url }}" width="300" height="400"> </div>
+        <div> <img src="{{'project.images.url' }}" width="300" height="400"> </div>
         {% endif %}
         <a href={{project.url}} target="blank"> Click Here For More </a>
     </div>
