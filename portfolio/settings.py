@@ -89,7 +89,7 @@ DATABASES = {
         'NAME': 'portfoliodb',
         'USER': 'juanpolanco',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '5431',
     }
 }
 
