@@ -27,7 +27,6 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'juanpolancoportfolio.herokuapp.com',
     '127.0.0.1',
-    'localhost',
                 ]
 
 
@@ -85,7 +84,7 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'portfoliodb',
         'USER': 'juanpolanco',
         'HOST': 'localhost',
