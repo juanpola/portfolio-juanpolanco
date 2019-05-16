@@ -1,7 +1,7 @@
 from portfolio import * 
 import django_heroku
 
-DEBUG = True
+DEBUG = False
 
 django_heroku.settings(locals())
 
