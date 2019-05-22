@@ -29,7 +29,7 @@ def project(request):
     context = {
         'projects': projects
     }
-    return render(request, 'projects.html', context=context)
+    return render(request, 'index.html', context=context)
 
 # def projectDetail(request, project_id):
 #     project_detail = get_object_or_404(Project, pk=project_id)

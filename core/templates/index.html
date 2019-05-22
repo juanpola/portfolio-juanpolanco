@@ -5,25 +5,40 @@
 
 
 <header>
-        <img src="{% static 'images/me.jpg' %}" alt="Juan Polanco" class="profile-image">
-        <h1 class="tag name">Hello, I’m Juan </h1>
-        <div class="tag-location"> 
+    <img src="{% static 'images/me.jpg' %}" alt="Juan Polanco" class="profile-image">
+    <h1 class="tag name">Hello, I’m Juan </h1>
+    <div class="tag-location">
         <p> <i> Full Stack Developer </i></p>
-        <p >  Raleigh, NC </p>
-        </div>  
-    </header>
-    <section class="container">
-        <div class="box1">
-            <h2 class="summary"> About Me </h2>
-            <p> Hard-working, outgoing, Ambitious, dedicated individual who possesses strong interpersonal skills.
-                Looking to apply my education and experience in the software field to create remarkable software to
-                make an impact within our community!</p>
+        <p> Raleigh, NC </p>
+    </div>
+</header>
+<section class="container">
+    <div class="box1">
+        <h2 class="summary"> About Me </h2>
+        <p> Hard-working, outgoing, Ambitious, dedicated individual who possesses strong interpersonal skills.
+            Looking to apply my education and experience in the software field to create remarkable software to
+            make an impact within our community!</p>
 
-            <p> <i>Sucess is not final, failure is not fatal: it is the courage to continue that counts. <br> -
-                    Winston Churchill </i> </p>
+        <p> <i>Sucess is not final, failure is not fatal: it is the courage to continue that counts. <br> -
+                Winston Churchill </i> </p>
 
+    </div>
+    <section id="projects">
+        {% for project in projects.all %}
+        <div class="container-1">
+            <div class="box2">
+                <h1> {{project.title}}</h1>
+                <h4> {{project.description}} </h4>
+                {% if project.image %}
+                <div> <img src="{{'project.images.url' }}" width="300" height="400"> </div>
+                {% endif %}
+                <a href={{project.url}} target="blank"> Click Here For More </a>
+            </div>
         </div>
 
+        {% endfor %}
+
+    </section>
 
 
-{% endblock %}
+    {% endblock %}
