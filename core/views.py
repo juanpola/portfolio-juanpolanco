@@ -1,6 +1,8 @@
 from django.shortcuts import render
 from .models import Job, Project, Skill, Education, Contact
 from django.shortcuts import render, get_object_or_404
+from django.core.paginator import Paginator
+
 # Create your views here.
 
 
@@ -26,6 +28,11 @@ def resume(request):
 def project(request):
     # Job_detail = get_object_or_404(Project, pk=job_id)
     projects = Project.objects.all()
+    paginator = Paginator(projects,1)
+    page = request.GET.get('page')
+    project = paginator.get_page(page)
+
+
     context = {
         'projects': projects
     }
