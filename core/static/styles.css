@@ -555,3 +555,48 @@ h2:hover {
 .bg-animate, .bg-animate:hover, .bg-animate:focus {
     transition: background-color .15s ease-in-out;
 }
+.nav-menu {
+    padding: 0 10rem;
+    display: flex;
+    flex-direction: row;
+}
+.nav-menu-drop {
+    background-color: white;
+    padding: 0 1rem;
+    border: 1px solid #3CBAA3;
+}
+.nav-menu li{
+    text-align: left;
+    transition-duration: 0.5s;
+}
+.nav-menu li:hover,
+.nav-menu li:focus-within{
+    cursor:pointer;
+}
+.nav-menu li:focus-within a{
+    outline:none;
+}
+ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    padding-left: 0;
+    display:none;
+}
+ul li:hover > ul,
+ul li ul:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    position: absolute;
+}
+ul li ul li{
+    clear: both;
+    width: 100%;
+    padding: 0;
+    margin-left:0;
+    background-color: white;
+}
